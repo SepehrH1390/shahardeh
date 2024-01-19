@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" auther="سپهر حلاجی" keywords="html">
+        <title>ثبت نام</title>
+        <link href="css/css.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+            function sub(){
+                if (document.getElementById("username").value==''){
+                    window.alert("نام کاربری خود را وارد کنید")
+                }
+                if (document.getElementById("password").value==''){
+                    window.alert("رمز عبور خود را وارد کنید")
+                }
+                if (document.getElementById("email").value==''){
+                    window.alert("ایمیل خود را وارد کنید")
+                }
+                else {
+                    document.getElementById("frm1").submit();
+                }
+            }
+        </script>
+    </head>
+<body class="body" bgcolor="black" dir="rtl">
+    <fieldset>
+        <legend>
+            ثبت نام
+        </legend>
+        <a href="shahardeh site.html"></image><image class="image" src="image/exit.jpg" width="60" height="60"></image></a>  
+        <form action="check_part.html" method="post" id="frm1" name="frm1">
+            <table style="border-radius:20px; font-size:25px;" border="2" align="center" width="850" cellpading="5px" cellspacing="5px">
+                <br>
+                <tr>
+                    <th colspan="3" style="text-align: center;">فرم ثبت نام</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>نام کاربری : </label>
+                        <input type="text" name="fname" autocomplete="on" placeholder="username" id="username" required>
+                    </td>
+                    <td>
+                        <label>رنگ مورد علاقه</label>
+                        <input type="color" name="color">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>تاریخ تولد : </label>
+                        <label>روز</label>
+                        <select style="width:50px;">
+                            <option value="0">روز</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <label>ماه</label>
+                        <select style="width:50px;">
+                            <option value="0">ماه</option>
+                            <option value="1">فروردین</option>
+                            <option value="2">اردیبهشت</option>
+                            <option value="3">خرداد</option>
+                            <option value="4">تیر</option>
+                            <option value="5">مرداد</option>
+                            <option value="6">شهریور</option>
+                            <option value="7">مهر</option>
+                            <option value="8">آبان</option>
+                            <option value="9">آذر</option>
+                            <option value="10">دی</option>
+                            <option value="11">بهمن</option>
+                            <option value="12">اسفند</option>
+                        </select>
+                        <label>دهه</label>
+                        <select style="width:50px;" id="decade">
+                            <option value="0" id="0">دهه</option>
+                            <option value="1" id="banana">1310</option>
+                            <option value="2">1320</option>
+                            <option value="3">1330</option>
+                            <option value="4">1340</option>
+                            <option value="5">1350</option>
+                            <option value="6">1360</option>
+                            <option value="7">1370</option>
+                            <option value="8">1380</option>
+                            <option value="9">1390</option>
+                            <option value="10">1400</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>ایمیل : </label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>رمز عبور : </label>
+                        <input type="password" name="password" placeholder="password" id="password" required>                
+                    </td>
+                    <td>
+                        جنسیت : 
+                        <input type="radio" name="male" id="sex" required>
+                        <label>مرد</label>
+                        <input type="radio" name="female" id="sex" required>
+                        <label>خانم</label>                
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>اپلود یک پروژه</label>
+                        <input type="file" name="file" id="upload project">
+                    </td>
+                    <td>
+                        <label>مقطع تحصیلی</label>
+                        <select>
+                            <option value="0">مقطع تحصیلی</option>
+                            <option value="1">اول</option>
+                            <option value="2">دوم</option>
+                            <option value="3">سوم</option>
+                            <option value="4">چهارم</option>
+                            <option value="5">پنجم</option>
+                            <option value="6">ششم</option>
+                            <option value="7">هفتم</option>
+                            <option value="8">هشتم</option>
+                            <option value="9">نهم</option>
+                            <option value="10">دهم</option>
+                            <option value="11">یازدهم</option>
+                            <option value="12">دوازدهم</option>
+                            <option value="-1">هیچ کدام</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        کدام یک از زبان های برنامه نویسی را بلدید ؟
+                        <input type="checkbox" value="html" name="html">
+                        <label>html</label>
+                        <input type="checkbox" value="css" name="css">
+                        <label>css</label>
+                        <input type="checkbox" value="python" name="python">
+                        <label>python</label>
+                        <input type="checkbox" value="javascript" name="javascript">
+                        <label>javascript</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>درباره خود</label>
+                        <br>
+                        <textarea cols="100" rows="5" wrap="virtual" placeholder="say something about yourself"></textarea>
+                    </td>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                    <input type="button" onclick="sub()" value="ثبت نام" name="sabtnam" class="a">
+                    <input type="reset" value="لغو" name="lagv" class="r">
+                    </td>
+                </tr>        
+            </table>
+        </form>
+        <h5>
+            <br>
+            <br>
+            <br>
+            طراحی و توسعه از سپهر حلاجی
+        </h5>
+    </fieldset>
+</body>
+</html>

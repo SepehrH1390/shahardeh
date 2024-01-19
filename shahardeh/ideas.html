@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" auther="سپهر حلاجی" keywords="html">
+        <title>my site</title>
+        <link href="css/css.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+            function sub2(){
+                if (document.getElementById("username2").value==''){
+                    window.alert("نام کاربری خود را وارد کنید")
+                }
+                if (document.getElementById("subject").value==''){
+                    window.alert("موضوع را وارد کنید")
+                }
+                if (document.getElementById("description").value==''){
+                    window.alert("مشکل را شرح کنید")
+                }
+                else {
+                    document.getElementById("frm2").submit();
+                }
+            }
+        </script>
+    </head>
+<body dir="rtl" class="body">
+    <fieldset>
+        <legend>
+            نظرات و پیشنهادات
+        </legend>
+        <a href="p.html"></image><image class="image" src="image/exit.jpg" width="60" height="60"></image></a>
+        <form action="check_part.html" method="post" id="frm2">
+            <table width="80px" border="5" align="center" dir="rtl" bgcolor="darkorange" cellpading="5px" cellspacing="10px">
+                <tr>
+                    <th>
+                        برای ثبت انتقاد، پیشنهاد و یا شکایت فرم زیر را تکمیل نمایید.
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>نام کاربری</label>
+                        <input size="50" type="text" name="fname2" autocomplete="on" id="username2" placeholder="username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>موضوع</label>
+                        <input size="52" type="text" name="subject" autocomplete="on" id="subject" placeholder="subject" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>شرح</label>
+                        <textarea cols="70" rows="15" wrap="virtual" id="description" placeholder="description" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <input onclick="sub2()" type="button" value="ثبت" name="sabt" class="a">
+                        <input type="reset" value="لغو" name="lagv" class="r">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h5>
+            طراحی و توسعه توسط سپهر حلاجی
+        </h5>
+    </fieldset>
+    
+</body>
+</html>
